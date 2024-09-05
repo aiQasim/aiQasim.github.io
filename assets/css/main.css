@@ -29,6 +29,77 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
+.navbar {
+	/* background-color: #333; */
+	position: relative;
+	z-index: 999;
+	text-align: center;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+.navbar ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	font: inherit;
+	vertical-align: baseline;
+	/* background: black; */
+}
+
+.navbar li {
+	display: inline-block;
+}
+
+.navbar li a {
+	/* color: white; */
+	display: block;
+	padding: 10px 20px;
+	text-decoration: none;
+}
+
+/* Style the dropdown menu */
+.navbar ul ul {
+	position: absolute;
+	top: 100%;
+	display: none;
+	background: #935d8c;
+}
+
+.navbar ul ul li {
+	display: block;
+}
+
+.navbar li:hover ul {
+	display: block;
+}
+
+/* Change the background color of dropdown links on hover */
+.navbar ul ul li a:hover {
+	background-color: #555;
+}
+
+
+
+.responsive-iframe-container {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	padding-top: 150%; /* 16:9 Aspect Ratio */
+}
+	
+.responsive-iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+
+
 body {
 	line-height: 1;
 }
@@ -3119,7 +3190,7 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		padding: 5em 5em 1em 5em ;
+		padding: 3em 3em 1em 3em ;
 		text-align: center;
 	}
 
@@ -3133,7 +3204,7 @@ input, select, textarea {
 		}
 
 		#header.alt {
-			padding: 7em 5em 4em 5em ;
+			padding: 3em 3em 3em 3em ;
 		}
 
 			#header.alt h1 {
@@ -3141,14 +3212,14 @@ input, select, textarea {
 			}
 
 			#header.alt > * {
-				-moz-transition: opacity 3s ease;
-				-webkit-transition: opacity 3s ease;
-				-ms-transition: opacity 3s ease;
-				transition: opacity 3s ease;
-				-moz-transition-delay: 0.5s;
-				-webkit-transition-delay: 0.5s;
-				-ms-transition-delay: 0.5s;
-				transition-delay: 0.5s;
+				-moz-transition: opacity 1s ease;
+				-webkit-transition: opacity 1s ease;
+				-ms-transition: opacity 1s ease;
+				transition: opacity 1s ease;
+				-moz-transition-delay: 0.25s;
+				-webkit-transition-delay: 0.25s;
+				-ms-transition-delay: 0.25s;
+				transition-delay: 0.25s;
 				opacity: 1;
 			}
 
@@ -3830,3 +3901,5 @@ input, select, textarea {
 			}
 
 		}
+
+		  
